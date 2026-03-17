@@ -1,0 +1,12 @@
+/* Use this spot for site-wide variables like colors & fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --primary-color: #0d99ff;
+    --secondary-color: #124559;
+    --accent-color1: #0cc0df;
+    --accent-color2: #598392;
+
+    --heading-font: Chango, Trebuchet, sans-serif;
+    --paragraph-font: Nunito, Trebuchet, sans-serif;
+}
