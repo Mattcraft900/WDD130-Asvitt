@@ -6,3 +6,18 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--accent-color2);
+    font-family: var(--paragraph-font);
+}
+
+/* Applies to all <a>'s everywhere (removes underline & weird colors) */
+a, a:hover, a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
