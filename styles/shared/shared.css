@@ -1,32 +1,44 @@
 @import 'variables.css';
 
+
+/* Page-wide basic reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Applies to all <a>'s everywhere (removes underline & weird colors) */
+
+/* Basic resets for all <a>'s everywhere */
+/* (removes underlines & weird colors) */
 a, a:hover, a:visited {
     text-decoration: inherit;
     color: inherit;
 }
 
-header, footer {
-    background-color: var(--primary-color);
-    color: white;
+a:hover {
+    cursor: pointer;
 }
 
+
+/* Header-only stuff */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* Stuff used in both the header AND footer */
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
     padding: 10px 60px;
 }
 
 .logo {
     width: 80px;
-    height: 80px;
+    aspect-ratio: 1/1;
     border-radius: 20%;
 }
 
@@ -39,16 +51,37 @@ header {
 
 .nav-links {
     display: flex;
-    justify-content: space-evenly;
+    gap: 2em;
     align-items: center;
 }
 
 .nav-links a {
-    margin: 0 1em;
-    font-weight: normal;
+    font-weight: 600;
 }
 
-footer {
-    
+.nav-links a:hover {
+    text-decoration: underline;
+    color: var(--accent-color2);
+}
+
+
+/* Footer-only stuff */
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-branding {
+    justify-self: right;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-text {
+    font-weight: lighter;
+    margin-top: -1em;
+    margin-bottom: -0.5em;
 }
 
