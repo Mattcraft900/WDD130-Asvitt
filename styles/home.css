@@ -1,23 +1,7 @@
-@import 'variables.css';
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import 'shared/shared.css';
 
 body {
-    background-color: var(--accent-color2);
+    background-color: white;
     font-family: var(--paragraph-font);
 }
 
-/* Applies to all <a>'s everywhere (removes underline & weird colors) */
-a, a:hover, a:visited {
-    text-decoration: inherit;
-    color: inherit;
-}
-
-header, footer {
-    background-color: var(--secondary-color);
-    color: white;
-}
