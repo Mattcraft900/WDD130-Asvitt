@@ -48,14 +48,6 @@ main {
     padding-left: 25%;
 }
 
-.color-box-left .content-title {
-    text-align: left;
-}
-
-.color-box-right .content-title {
-    text-align: right;
-}
-
 .color-box-right {
     grid-area: 3/3/4/9;
     padding-right: 25%;
@@ -66,6 +58,7 @@ main {
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .content-para {
@@ -99,7 +92,7 @@ main {
         padding-right: 40px;
     }
 
-    .color-box-left .content-title, .color-box-right .content-title {
+    .content-title {
         text-align: center;
     }
 
